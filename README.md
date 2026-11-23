@@ -5,6 +5,8 @@
 
 iPhoneのSafariから「ホーム画面に追加」してPWA（Progressive Web App）として使えます。
 
+**公開URL: https://ndagsudo.github.io/akashidai-bus/**
+
 ---
 
 ## ファイル構成
