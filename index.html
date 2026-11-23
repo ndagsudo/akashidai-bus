@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>明石台バス検索</title>
+<meta name="description" content="明石台七丁目・明石台公園前と泉中央駅の間のバス時刻を検索する個人専用アプリ">
+<meta name="theme-color" content="#0a84ff">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="明石台バス検索">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ホーム画面 -->
+  <section id="screen-home" class="screen">
+    <header class="app-header">
+      <h1>明石台バス検索</h1>
+    </header>
+    <div class="home-buttons">
+      <button id="btn-outbound" class="big-button big-button-outbound">
+        <span class="big-button-label">行き</span>
+        <span class="big-button-sub">明石台 → 泉中央駅</span>
+      </button>
+      <button id="btn-inbound" class="big-button big-button-inbound">
+        <span class="big-button-label">帰り</span>
+        <span class="big-button-sub">泉中央駅 → 明石台</span>
+      </button>
+    </div>
+    <div id="stale-banner" class="stale-banner" hidden>
+      ⚠️ 時刻表の更新確認が必要です
+    </div>
+    <p class="home-footnote">宮城交通 公式時刻表(NAVITIME掲載)に基づく個人用の参考アプリです。</p>
+  </section>
+
+  <!-- 検索結果画面 -->
+  <section id="screen-result" class="screen" hidden>
+    <header class="result-header">
+      <button id="btn-back" class="icon-button" aria-label="ホームに戻る">←</button>
+      <h2 id="result-title">行き</h2>
+      <div style="width:2.2rem"></div>
+    </header>
+
+    <div class="context-bar">
+      <div id="context-datetime" class="context-datetime"></div>
+      <div id="context-daytype" class="context-daytype"></div>
+    </div>
+
+    <div id="manual-time-panel" class="manual-time-panel" hidden>
+      <label class="manual-field">
+        日付
+        <input type="date" id="input-date">
+      </label>
+      <label class="manual-field">
+        時刻
+        <input type="time" id="input-time">
+      </label>
+      <div class="manual-actions">
+        <button id="btn-apply-manual" class="small-button primary">この日時で検索</button>
+        <button id="btn-cancel-manual" class="small-button">キャンセル</button>
+      </div>
+    </div>
+
+    <div id="result-body"></div>
+
+    <div class="action-row">
+      <button id="btn-refresh" class="action-button">時刻を更新</button>
+      <button id="btn-show-all" class="action-button">全便を見る</button>
+      <button id="btn-now" class="action-button">現在時刻に戻る</button>
+      <button id="btn-manual" class="action-button">日時を指定</button>
+    </div>
+
+    <p class="disclaimer">
+      ※ここに表示される「残り時間」はリアルタイムの運行情報ではなく、登録された時刻表に基づく参考値です。
+      遅延・運休が発生する場合があります。
+    </p>
+    <div id="footer-meta" class="footer-meta"></div>
+  </section>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

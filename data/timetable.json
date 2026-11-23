@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "appName": "明石台バス検索",
+    "confirmedDate": "2026-11-23",
+    "description": "宮城交通 公式サイト(NAVITIME乗換案内)で確認した時刻表データ。ダイヤ改正があった場合はこのファイルだけを更新してください。",
+    "generalNotes": [
+      "年末年始・お盆・祝日の特別ダイヤは未調査です。必ず公式サイトでも確認してください。",
+      "明石台七丁目は終点のため、泉中央駅から明石台七丁目方面への「到着時刻」は公式サイトに個別の時刻表が存在せず、未確認です。「泉中央駅発車時刻」のみを掲載しています。",
+      "明石台公園前の「泉中央駅方面」時刻表には、将監トンネル経由 泉中央駅行きに加え、泉警察署経由 仙台駅前行きが同じのりばに掲載されていますが、仙台駅前行きが泉中央駅を実際に経由するかは未確認のため、このアプリの候補からは除外しています。"
+    ],
+    "specialScheduleDates": []
+  },
+  "stops": {
+    "akashidai7": {
+      "name": "明石台七丁目",
+      "shortName": "明石台七丁目",
+      "priority": 1,
+      "walkMinutesFromHome": null
+    },
+    "akashidaiPark": {
+      "name": "明石台公園前",
+      "shortName": "明石台公園前",
+      "priority": 2,
+      "walkMinutesFromHome": null
+    }
+  },
+  "directions": {
+    "outbound": {
+      "label": "明石台 → 泉中央駅",
+      "description": "自宅から泉中央駅へ向かう便",
+      "routes": {
+        "akashidai7": {
+          "stopName": "明石台七丁目",
+          "destination": "泉中央駅",
+          "lineName": "東向陽台線",
+          "via": "七北田:新町経由",
+          "platform": "のりば2",
+          "sourceUrl": "https://transfer.navitime.biz/miyagikotsu/pc/diagram/BusAboardMap?stCode=00330593",
+          "revisionDate": "2026-04-01",
+          "confirmedDate": "2026-11-23",
+          "schedules": {
+            "weekday": [
+              {"time": "06:20"}, {"time": "06:39"}, {"time": "06:59"},
+              {"time": "07:19"}, {"time": "07:39"}, {"time": "07:59"},
+              {"time": "08:44"}, {"time": "09:39"}, {"time": "10:39"},
+              {"time": "11:39"},
+              {"time": "12:39", "note": "東北学院大学経由"},
+              {"time": "13:39", "note": "東北学院大学経由"},
+              {"time": "14:39", "note": "東北学院大学経由"},
+              {"time": "15:39", "note": "東北学院大学経由"}
+            ],
+            "saturday": [
+              {"time": "06:39"}, {"time": "07:44"}, {"time": "08:44"},
+              {"time": "10:44"},
+              {"time": "12:49", "note": "東北学院大学経由"}
+            ],
+            "holiday": [
+              {"time": "06:39"}, {"time": "07:44"}, {"time": "08:44"},
+              {"time": "10:44"},
+              {"time": "12:49", "note": "東北学院大学経由"}
+            ]
+          }
+        },
+        "akashidaiPark": {
+          "stopName": "明石台公園前",
+          "destination": "泉中央駅",
+          "lineName": "新富谷ガーデンシティ線",
+          "via": "将監:トンネル経由",
+          "platform": "のりば2",
+          "sourceUrl": "https://transfer.navitime.biz/miyagikotsu/pc/diagram/BusAboardMap?stCode=00332506",
+          "revisionDate": "2026-09-19",
+          "confirmedDate": "2026-11-23",
+          "schedules": {
+            "weekday": [
+              {"time": "06:15"}, {"time": "06:30"}, {"time": "06:40"}, {"time": "06:45"},
+              {"time": "06:47"}, {"time": "06:55"}, {"time": "06:57"}, {"time": "07:05"},
+              {"time": "07:10"}, {"time": "07:22"}, {"time": "07:28"}, {"time": "07:31"},
+              {"time": "07:36"}, {"time": "07:41"}, {"time": "07:43"}, {"time": "07:54"},
+              {"time": "08:05"}, {"time": "08:12"}, {"time": "08:27"}, {"time": "08:45"},
+              {"time": "09:07"}, {"time": "09:33"}, {"time": "09:53"}, {"time": "10:11"},
+              {"time": "10:33"}, {"time": "10:53"}, {"time": "11:11"}, {"time": "11:33"},
+              {"time": "11:53"}, {"time": "12:11"}, {"time": "12:33"}, {"time": "12:53"},
+              {"time": "13:11"}, {"time": "13:33"}, {"time": "13:53"}, {"time": "14:11"},
+              {"time": "14:33"}, {"time": "14:53"}, {"time": "15:11"}, {"time": "15:33"},
+              {"time": "15:53"}, {"time": "16:11"}, {"time": "16:33"}, {"time": "17:00"},
+              {"time": "17:43"}, {"time": "18:00"}, {"time": "18:33"}, {"time": "19:38"}
+            ],
+            "saturday": [
+              {"time": "06:33"}, {"time": "06:59"}, {"time": "07:33"}, {"time": "07:59"},
+              {"time": "08:33"}, {"time": "08:59"}, {"time": "09:33"}, {"time": "10:00"},
+              {"time": "10:33"}, {"time": "11:00"}, {"time": "11:33"}, {"time": "12:00"},
+              {"time": "12:33"}, {"time": "13:00"}, {"time": "13:33"}, {"time": "14:00"},
+              {"time": "14:33"}, {"time": "15:00"}, {"time": "15:33"}, {"time": "16:00"},
+              {"time": "16:33"}, {"time": "17:00"}, {"time": "17:38"}, {"time": "18:00"},
+              {"time": "18:38"}, {"time": "19:38"}
+            ],
+            "holiday": [
+              {"time": "06:33"}, {"time": "06:59"}, {"time": "07:33"}, {"time": "07:59"},
+              {"time": "08:33"}, {"time": "08:59"}, {"time": "09:33"}, {"time": "10:00"},
+              {"time": "10:33"}, {"time": "11:00"}, {"time": "11:33"}, {"time": "12:00"},
+              {"time": "12:33"}, {"time": "13:00"}, {"time": "13:33"}, {"time": "14:00"},
+              {"time": "14:33"}, {"time": "15:00"}, {"time": "15:33"}, {"time": "16:00"},
+              {"time": "16:33"}, {"time": "17:00"}, {"time": "17:38"}, {"time": "18:00"},
+              {"time": "18:38"}, {"time": "19:38"}
+            ]
+          }
+        }
+      }
+    },
+    "inbound": {
+      "label": "泉中央駅 → 明石台",
+      "description": "泉中央駅から自宅へ帰る便",
+      "routes": {
+        "akashidai7": {
+          "stopName": "明石台七丁目",
+          "boardingStopName": "泉中央駅",
+          "destination": "明石台団地",
+          "lineName": "東向陽台線",
+          "via": "七北田:新町経由",
+          "platform": "泉中央駅 のりば5",
+          "timeIsArrivalAtStop": false,
+          "sourceUrl": "https://transfer.navitime.biz/miyagikotsu/pc/diagram/BusCourseSearch?busstopId=00330593",
+          "revisionDate": "2026-04-01",
+          "confirmedDate": "2026-11-23",
+          "schedules": {
+            "weekday": [
+              {"time": "10:45"}, {"time": "11:45"}, {"time": "12:45"}, {"time": "13:45"},
+              {"time": "14:45"}, {"time": "15:45"}, {"time": "16:45"}, {"time": "17:50"},
+              {"time": "18:50"}, {"time": "20:05"}
+            ],
+            "saturday": [
+              {"time": "13:20"}, {"time": "14:45"}, {"time": "15:45"}, {"time": "16:45"},
+              {"time": "17:45"}, {"time": "18:45"}
+            ],
+            "holiday": [
+              {"time": "13:20"}, {"time": "14:45"}, {"time": "15:45"}, {"time": "16:45"},
+              {"time": "17:45"}, {"time": "18:45"}
+            ]
+          }
+        },
+        "akashidaiPark": {
+          "stopName": "明石台公園前",
+          "boardingStopName": "泉中央駅",
+          "destination": "新富谷ガーデンシティ方面",
+          "lineName": "新富谷ガーデンシティ線",
+          "via": "内回り/外回り経由",
+          "platform": "泉中央駅 のりば5",
+          "timeIsArrivalAtStop": true,
+          "sourceUrl": "https://transfer.navitime.biz/miyagikotsu/pc/diagram/BusCourseSearch?busstopId=00332506",
+          "revisionDate": "2026-04-01",
+          "confirmedDate": "2026-11-23",
+          "schedules": {
+            "weekday": [
+              {"time": "07:27"}, {"time": "07:57"}, {"time": "08:02"}, {"time": "08:27"},
+              {"time": "09:20"}, {"time": "09:45"}, {"time": "10:00"}, {"time": "10:20"},
+              {"time": "10:45"}, {"time": "11:00"}, {"time": "11:20"}, {"time": "11:45"},
+              {"time": "12:00"}, {"time": "12:20"}, {"time": "12:45"}, {"time": "13:00"},
+              {"time": "13:20"}, {"time": "13:45"}, {"time": "14:00"}, {"time": "14:20"},
+              {"time": "14:45"}, {"time": "15:00"}, {"time": "15:20"}, {"time": "15:45"},
+              {"time": "16:00"}, {"time": "16:22"}, {"time": "16:47"}, {"time": "17:02"},
+              {"time": "17:17"}, {"time": "17:32"}, {"time": "17:47"}, {"time": "17:57"},
+              {"time": "18:07"}, {"time": "18:17"}, {"time": "18:27"}, {"time": "18:37"},
+              {"time": "18:47"}, {"time": "18:57"}, {"time": "19:07"}, {"time": "19:17"},
+              {"time": "19:27"},
+              {"time": "19:38", "note": "仙台駅始発便"},
+              {"time": "19:52"}, {"time": "20:02"}, {"time": "20:20"}, {"time": "20:40"},
+              {"time": "21:00"}, {"time": "21:20"}, {"time": "21:40"}, {"time": "22:00"},
+              {"time": "22:20"}
+            ],
+            "saturday": [
+              {"time": "07:20"}, {"time": "07:55"}, {"time": "08:20"}, {"time": "09:22"},
+              {"time": "09:47"}, {"time": "10:22"}, {"time": "10:47"}, {"time": "11:22"},
+              {"time": "11:47"}, {"time": "12:22"}, {"time": "12:47"}, {"time": "13:22"},
+              {"time": "13:47"}, {"time": "14:22"}, {"time": "14:47"}, {"time": "15:22"},
+              {"time": "15:47"}, {"time": "16:22"}, {"time": "16:47"}, {"time": "17:20"},
+              {"time": "17:45"}, {"time": "18:20"}, {"time": "18:45"}, {"time": "19:20"},
+              {"time": "19:45"}, {"time": "20:20"}, {"time": "20:45"}, {"time": "21:20"},
+              {"time": "21:40"}
+            ],
+            "holiday": [
+              {"time": "07:20"}, {"time": "07:55"}, {"time": "08:20"}, {"time": "09:22"},
+              {"time": "09:47"}, {"time": "10:22"}, {"time": "10:47"}, {"time": "11:22"},
+              {"time": "11:47"}, {"time": "12:22"}, {"time": "12:47"}, {"time": "13:22"},
+              {"time": "13:47"}, {"time": "14:22"}, {"time": "14:47"}, {"time": "15:22"},
+              {"time": "15:47"}, {"time": "16:22"}, {"time": "16:47"}, {"time": "17:20"},
+              {"time": "17:45"}, {"time": "18:20"}, {"time": "18:45"}, {"time": "19:20"},
+              {"time": "19:45"}, {"time": "20:20"}, {"time": "20:45"}, {"time": "21:20"},
+              {"time": "21:40"}
+            ]
+          }
+        }
+      }
+    }
+  }
+}
